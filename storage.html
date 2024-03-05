@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Details</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="formbox" id="formbox">
+            <h1>Personal Details</h1>
+            <form action="" class="formdetails" id="formdetails">
+                <div>
+                    <label for="name">Name: <input type="text" name="Priya" value="" class="name" id="name" placeholder="Priya" required></label>
+                </div>
+
+                <br>
+
+                
+                <label for="email">Email: <input type="email" name="emailid" value="" class="email" id="email" placeholder="Priya@gmail.com" required></label>
+                
+
+                <br>
+
+                
+                <label for="password">Password: <input type="password" name="password" value="" class="password" id="password" placeholder="" required></label>
+                
+
+                <br><br>
+
+                
+                Gender: 
+                    
+                    <input type="radio" name="gender" value="Male" class="gender" id="male" placeholder=""><label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female" class="gender" id="female" placeholder=""><label for="female">Female</label>
+                    <input type="radio" name="gender" value="Others" class="gender" id="others" placeholder=""><label for="others">Others</label>
+                
+
+                <br><br>
+
+                Your Interest: 
+                    <input type="checkbox" name="Buisness" value="" class="" id="Business"><label>Business</label>
+                    <input type="checkbox" name="Tech" value="" class="" id="Tech"><label>Technology</label>
+                    <input type="checkbox" name="Sales" value="" class="" id="Sales"><label>Sales</label>
+                    <input type="checkbox" name="Science" value="" class="" id="Science"><label>Science</label>
+                    <input type="checkbox" name="Finance" value="" class="" id="Finance"><label>Finance</label>
+                
+
+                <br>
+
+                Contact No:
+                    <input type="tel" name="mobile" value="" class="mobileNo" id="mobileNo" required>
+
+                <br>
+
+                
+                State: 
+                    <select name="state" id="state" class="state">
+                        <option value=""></option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Karnataka">Karnataka</option>
+                    </select>
+                
+
+                <br>
+
+                
+
+                <br>
+
+                
+
+                <br><br>
+
+                <p class="error" id="error"></p>
+
+                <div class="buttonBox">
+                    <button onclick="checkCheckbox()">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+        <br><br>
+
+        <div class="table" id="tablebox" >
+            <table id="table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Gender</th>
+                        <th>Your Interest</th>
+                        <th>Contact No</th>
+                        <th>State</th>
+                        <!--<th>Profile</th>-->
+                        <th>Text area</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="storage.js"></script>
+</body>
+</html>
